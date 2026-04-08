@@ -20,9 +20,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://berkaysu.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   icons: {
-    icon: "/atacan-logo.png",
-    shortcut: "/atacan-logo.png",
-    apple: "/atacan-logo.png",
+    icon: "/atacan-logo.ico",
+    shortcut: "/atacan-logo.ico",
+    apple: "/atacan-logo.ico",
   },
   title: {
     default: "Atacan Suarıtma Teknolojileri | Su Arıtma Cihazları",
