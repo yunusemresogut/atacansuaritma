@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Atacan Suarıtma Teknolojileri – Su Arıtma Tanıtım Sitesi
 
-## Getting Started
+Next.js 16, TypeScript ve Tailwind CSS ile oluşturulmuş statik marka tanıtım sitesi. Su arıtma cihazları ürün listesi, hakkımızda ve iletişim sayfaları içerir. Fiyat/satış yok; sadece ürün tanıtımı.
 
-First, run the development server:
+## Özellikler
+
+- **Next.js 16** (App Router) + **TypeScript** + **Tailwind CSS 4**
+- Mavi–lacivert tema, responsive, mobil uyumlu
+- **Sayfalar:** Ana sayfa, Ürünler, Ürün detay, Hakkımızda, İletişim
+- **SEO:** Metadata, sitemap.xml, robots.txt, semantic HTML
+- Statik export uyumlu (SPA benzeri client-side navigasyon)
+
+## Geliştirme
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Tarayıcıda [http://localhost:3000](http://localhost:3000) açın.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Özelleştirme
 
-To learn more about Next.js, take a look at the following resources:
+- **Marka adı:** `Header`, `Footer` ve `layout.tsx` içindeki "Atacan Suarıtma Teknolojileri" metnini değiştirin; `metadata` içindeki title/description’ı güncelleyin.
+- **Ürünler:** `src/data/products.ts` dosyasını düzenleyin. Gerçek ürün görselleri için `public/images/` klasörüne dosya ekleyin (örn. `product-1.jpg`) veya `image` alanında harici URL kullanın (Next.js `images.remotePatterns` gerekebilir).
+- **İletişim bilgileri:** `Footer`, `src/app/iletisim/page.tsx` ve `layout.tsx` metadata içindeki telefon, e-posta ve adresi güncelleyin.
+- **Site URL (SEO):** `.env.local` içinde `NEXT_PUBLIC_SITE_URL=https://yourdomain.com` tanımlayın.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Proje yapısı
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── layout.tsx      # Ana layout, SEO metadata
+│   ├── page.tsx        # Ana sayfa
+│   ├── urunler/        # Ürün listesi ve [slug] detay
+│   ├── hakkimizda/
+│   ├── iletisim/
+│   ├── sitemap.ts
+│   ├── robots.ts
+│   └── not-found.tsx
+├── components/
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── Container.tsx
+│   └── ProductCard.tsx
+└── data/
+    └── products.ts     # Ürün verisi
+```
 
-## Deploy on Vercel
+## Lisans
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Özel proje.
