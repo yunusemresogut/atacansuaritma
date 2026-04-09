@@ -1,4 +1,4 @@
-# Atacan Suarıtma Teknolojileri – Su Arıtma Tanıtım Sitesi
+# Atacan Su Arıtma Teknolojileri – Su Arıtma Tanıtım Sitesi
 
 Next.js 16, TypeScript ve Tailwind CSS ile oluşturulmuş statik marka tanıtım sitesi. Su arıtma cihazları ürün listesi, hakkımızda ve iletişim sayfaları içerir. Fiyat/satış yok; sadece ürün tanıtımı.
 
@@ -28,7 +28,7 @@ npm start
 
 ## Özelleştirme
 
-- **Marka adı:** `Header`, `Footer` ve `layout.tsx` içindeki "Atacan Suarıtma Teknolojileri" metnini değiştirin; `metadata` içindeki title/description’ı güncelleyin.
+- **Marka adı:** `Header`, `Footer` ve `layout.tsx` içindeki "Atacan Su Arıtma Teknolojileri" metnini değiştirin; `metadata` içindeki title/description’ı güncelleyin.
 - **Ürünler:** `src/data/products.ts` dosyasını düzenleyin. Gerçek ürün görselleri için `public/images/` klasörüne dosya ekleyin (örn. `product-1.jpg`) veya `image` alanında harici URL kullanın (Next.js `images.remotePatterns` gerekebilir).
 - **İletişim bilgileri:** `Footer`, `src/app/iletisim/page.tsx` ve `layout.tsx` metadata içindeki telefon, e-posta ve adresi güncelleyin.
 - **Site URL (SEO):** `.env.local` içinde `NEXT_PUBLIC_SITE_URL=https://yourdomain.com` tanımlayın.

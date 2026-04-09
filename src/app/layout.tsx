@@ -25,20 +25,20 @@ export const metadata: Metadata = {
     apple: "/atacan-logo.ico",
   },
   title: {
-    default: "Atacan Suarıtma Teknolojileri | Su Arıtma Cihazları",
-    template: "%s | Atacan Suarıtma Teknolojileri",
+    default: "Atacan Su Arıtma Teknolojileri | Su Arıtma Cihazları",
+    template: "%s | Atacan Su Arıtma Teknolojileri",
   },
   description:
     "Ev tipi ve endüstriyel su arıtma cihazları. Sağlıklı ve temiz su için profesyonel çözümler. Reverse osmoz, UV sterilizasyon ve alkali su sistemleri.",
   keywords: ["su arıtma", "su arıtma cihazı", "ev tipi su arıtma", "reverse osmoz", "su arıtma cihazları", "içme suyu"],
-  authors: [{ name: "Atacan Suarıtma Teknolojileri" }],
-  creator: "Atacan Suarıtma Teknolojileri",
+  authors: [{ name: "Atacan Su Arıtma Teknolojileri" }],
+  creator: "Atacan Su Arıtma Teknolojileri",
   openGraph: {
     type: "website",
     locale: "tr_TR",
     url: siteUrl,
-    siteName: "Atacan Suarıtma Teknolojileri",
-    title: "Atacan Suarıtma Teknolojileri | Su Arıtma Cihazları",
+    siteName: "Atacan Su Arıtma Teknolojileri",
+    title: "Atacan Su Arıtma Teknolojileri | Su Arıtma Cihazları",
     description: "Ev tipi ve endüstriyel su arıtma cihazları. Sağlıklı ve temiz su için profesyonel çözümler.",
   },
   robots: {

@@ -4,7 +4,7 @@ import { Container } from "@/components/Container";
 export const metadata: Metadata = {
   title: "Hakkımızda",
   description:
-    "Atacan Suarıtma Teknolojileri olarak su arıtma sektöründe kalite ve güveni ön planda tutuyoruz. Misyonumuz ve değerlerimiz hakkında bilgi edinin.",
+    "Atacan Su Arıtma Teknolojileri olarak su arıtma sektöründe kalite ve güveni ön planda tutuyoruz. Misyonumuz ve değerlerimiz hakkında bilgi edinin.",
 };
 
 const values = [
@@ -29,7 +29,7 @@ export default function HakkimizdaPage() {
         <div className="mx-auto">
           <h1 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Hakkımızda</h1>
           <p className="mt-6 text-lg leading-relaxed text-muted">
-            Atacan Suarıtma Teknolojileri olarak, evlerden işletmelere ve endüstriyel tesislere kadar her ölçekte temiz ve güvenli su
+            Atacan Su Arıtma Teknolojileri olarak, evlerden işletmelere ve endüstriyel tesislere kadar her ölçekte temiz ve güvenli su
             ihtiyacına yanıt veren su arıtma çözümleri sunuyoruz.
           </p>
           <p className="mt-4 text-lg leading-relaxed text-muted">
@@ -52,7 +52,7 @@ export default function HakkimizdaPage() {
         </div>
 
         <div className="mt-16 rounded-2xl bg-(--navy-50) p-8 sm:p-12">
-          <h2 className="text-2xl font-bold text-foreground">Neden Atacan Suarıtma Teknolojileri?</h2>
+          <h2 className="text-2xl font-bold text-foreground">Neden Atacan Su Arıtma Teknolojileri?</h2>
           <ul className="mt-6 space-y-4 text-muted">
             <li className="flex gap-3">
               <span className="text-accent">•</span>

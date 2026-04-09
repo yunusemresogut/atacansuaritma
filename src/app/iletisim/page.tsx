@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/site";
 export const metadata: Metadata = {
   title: "İletişim",
   description:
-    "Atacan Suarıtma Teknolojileri ile iletişime geçin. Ürün bilgisi, fiyat teklifi ve teknik destek için bizi arayın veya mesaj gönderin.",
+    "Atacan Su Arıtma Teknolojileri ile iletişime geçin. Ürün bilgisi, fiyat teklifi ve teknik destek için bizi arayın veya mesaj gönderin.",
 };
 
 export default function IletisimPage() {
@@ -87,7 +87,7 @@ export default function IletisimPage() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Atacan Suarıtma Teknolojileri konum haritası"
+                title="Atacan Su Arıtma Teknolojileri konum haritası"
                 className="absolute inset-0"
               />
             </div>

@@ -1,5 +1,5 @@
 export const siteConfig = {
-  brandName: "Atacan Suarıtma Teknolojileri",
+  brandName: "Atacan Su Arıtma Teknolojileri",
 
   contact: {
     phone: "+90 541 909 54 40",
