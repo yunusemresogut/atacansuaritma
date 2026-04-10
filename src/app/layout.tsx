@@ -16,13 +16,17 @@ const geistMono = Geist_Mono({
 });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://berkaysu.com";
+const socialPreviewImage = `${siteUrl}/atacan-logo.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   icons: {
-    icon: "/atacan-logo.ico",
-    shortcut: "/atacan-logo.ico",
-    apple: "/atacan-logo.ico",
+    icon: [
+      { url: "/atacan-logo.ico" },
+      { url: "/atacan-logo.png", type: "image/png", sizes: "1080x1080" },
+    ],
+    shortcut: [{ url: "/atacan-logo.ico" }],
+    apple: [{ url: "/atacan-logo.png", sizes: "180x180", type: "image/png" }],
   },
   title: {
     default: "Atacan Su Arıtma Teknolojileri | Su Arıtma Cihazları",
@@ -40,6 +44,20 @@ export const metadata: Metadata = {
     siteName: "Atacan Su Arıtma Teknolojileri",
     title: "Atacan Su Arıtma Teknolojileri | Su Arıtma Cihazları",
     description: "Ev tipi ve endüstriyel su arıtma cihazları. Sağlıklı ve temiz su için profesyonel çözümler.",
+    images: [
+      {
+        url: socialPreviewImage,
+        width: 1080,
+        height: 1080,
+        alt: "Atacan Su Arıtma Teknolojileri",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Atacan Su Arıtma Teknolojileri | Su Arıtma Cihazları",
+    description: "Ev tipi ve endüstriyel su arıtma cihazları. Sağlıklı ve temiz su için profesyonel çözümler.",
+    images: [socialPreviewImage],
   },
   robots: {
     index: true,
