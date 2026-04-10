@@ -15,18 +15,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://berkaysu.com";
-const socialPreviewImage = `${siteUrl}/atacan-logo.png`;
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://eskisehiratacansuaritma.com";
+const socialPreviewImage = `${siteUrl}/favicon.png`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   icons: {
     icon: [
-      { url: "/atacan-logo.ico" },
-      { url: "/atacan-logo.png", type: "image/png", sizes: "1080x1080" },
+      { url: "/favicon.ico" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
     ],
-    shortcut: [{ url: "/atacan-logo.ico" }],
-    apple: [{ url: "/atacan-logo.png", sizes: "180x180", type: "image/png" }],
+    shortcut: [{ url: "/favicon.ico" }],
+    apple: [{ url: "/favicon.png", sizes: "180x180", type: "image/png" }],
   },
   title: {
     default: "Atacan Su Arıtma Teknolojileri | Su Arıtma Cihazları",

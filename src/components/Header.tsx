@@ -24,7 +24,7 @@ export function Header() {
             href="/"
             className="text-xl font-bold tracking-tight text-primary transition-colors hover:text-primary-dark"
           >
-            <img src="/atacan-logo.png" alt="Logo" className="w-16 lg:w-30 h-16 lg:h-30" />
+            <img src="/favicon.png" alt="Logo" className="w-16 lg:w-30 h-16 lg:h-30" />
           </Link>
 
           {/* Desktop nav */}
